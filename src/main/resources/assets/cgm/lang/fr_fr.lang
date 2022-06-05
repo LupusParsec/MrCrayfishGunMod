@@ -8,6 +8,7 @@ item.cgm.bazooka.name=Bazooka
 item.cgm.chain_gun.name=Minigun
 item.cgm.rifle.name=Fusil
 item.cgm.assault_rifle.name=Fusil d'Assaut
+item.cgm.machine_pistol.name=Pistolet Mitrailleur
 
 item.cgm.basic_ammo.name=Munition Basique
 item.cgm.advanced_ammo.name=Munition Avancée
