@@ -40,9 +40,9 @@ config.cgm.client=Cliente
 
 config.cgm.client.tooltip=Configurações do cliente.
 config.cgm.client.sounds=Sons
-config.cgm.client.sounds.tooltip=Control sounds triggered by guns
+config.cgm.client.sounds.tooltip=Controla os sons ativados pelas armas
 config.cgm.client.sounds.hit_sound=Tocar Som de Acerto
-config.cgm.client.sounds.hit_sound.tooltip=If true, a ding sound will play when you successfully hit a player with a gun
+config.cgm.client.sounds.hit_sound.tooltip=Se ativo (true), um barulhinho vai tocar quando você acertar com sucesso um tiro em um jogador
 config.cgm.client.display=Display
 config.cgm.client.display.tooltip=Configurações para opções relacionadas ao display
 config.cgm.client.display.workbench_animation=Animação da Bancada de Criação
@@ -50,30 +50,30 @@ config.cgm.client.display.workbench_animation.tooltip=Se ativo (true), uma anima
 
 config.cgm.server=Servidor
 config.cgm.server.tooltip=Configurações do servidor.
-config.cgm.server.grow_bounding_box_amount=Grow Bounding Box
-config.cgm.server.grow_bounding_box_amount.tooltip=The extra amount to expand an entity's bounding box when checking for projectile collision. Setting this value higher will make it easier to hit players
-config.cgm.server.enabled_head_shots=Enable Head Shots
-config.cgm.server.enabled_head_shots.tooltip=Enables the check for head shots for players. Projectiles that hit the head of a player will have increased damage.
-config.cgm.server.head_shot_damage_multiplier=Head Shot Damage Multiplier
-config.cgm.server.head_shot_damage_multiplier.tooltip=The value to multiply the damage by if projectile hit the players head
+config.cgm.server.grow_bounding_box_amount=Aumentar os Limites Mínimos da Caixa de Colisão
+config.cgm.server.grow_bounding_box_amount.tooltip=A quantia extra cuja uma Caixa de Colisão de uma entidade se expandirá quando for checar colisões com projéties. Aumentar este valor fará com que jogadores sejam mais fáceis de acertar.
+config.cgm.server.enabled_head_shots=Habilitar Tiros na Cabeça
+config.cgm.server.enabled_head_shots.tooltip=Permite que o jogo cheque se jogadores levaram tiro na cabeça. Projéteis que acertam a cabeça do jogador causam dano adicional.
+config.cgm.server.head_shot_damage_multiplier=Multiplicador de Dano de Tiros na Cabeça
+config.cgm.server.head_shot_damage_multiplier.tooltip=Valor cujo o dano será multiplicado se o projétil acertar o jogador na cabeça
 
 config.cgm.server.network=Rede
 config.cgm.server.network.tooltip=Propriedades relacionadas à rede
 config.cgm.server.network.projectile_tracking_range=Alcance do Trajeto do Projétil
-config.cgm.server.network.projectile_tracking_range.tooltip=The distance players need to be within to be able to track new projectiles trails. Higher values means you can see projectiles from that start from further away.
+config.cgm.server.network.projectile_tracking_range.tooltip=A distância que jogadores precisam estar dentro para que seja possível traçar novos Trajetos de Projéties. Valores maiores indicam que você pode ver projéties desde o começo bem de longe.
 
 config.cgm.server.aggro=Mobs Agressivos
-config.cgm.server.aggro.tooltip=Nearby mobs are angered and/or scared by the firing of guns.
-config.cgm.server.aggro.enabled=Mobs Agressivos Habilitado
-config.cgm.server.aggro.enabled.tooltip=If true, nearby mobs are angered and/or scared by the firing of guns.
-config.cgm.server.aggro.hostile=Anger Hostile Mobs
-config.cgm.server.aggro.hostile.tooltip=If true, in addition to causing peaceful mobs to panic, firing a gun will also cause nearby hostile mobs to target the shooter.
-config.cgm.server.aggro.silenced=Range Silenced
-config.cgm.server.aggro.silenced.tooltip=Any mobs within a sphere of this radius will aggro on the shooter of a silenced gun.
-config.cgm.server.aggro.unsilenced=Range Unsilenced
-config.cgm.server.aggro.unsilenced.tooltip=Any mobs within a sphere of this radius will aggro on the shooter of an unsilenced gun.
-config.cgm.server.aggro.exempt=Exempt Mob Classes
-config.cgm.server.aggro.exempt.tooltip=Any mobs of classes with class pathes in this list will not aggro on shooters.
+config.cgm.server.aggro.tooltip=Mobs próximos se irritam e/ou se assustam com os disparos das armas.
+config.cgm.server.aggro.enabled=Mobs Agressivos Habilitados
+config.cgm.server.aggro.enabled.tooltip=Se ativo (true), mobs próximos se irritam e/ou se assustam com os disparos das armas.
+config.cgm.server.aggro.hostile=Mobs Hostís Irritados
+config.cgm.server.aggro.hostile.tooltip=Se ativo (true), além de fazer mobs pacíficos entrarem em pânico, disparar uma arma também faz mobs hostís próximos selecionarem como alvo de ataque, procurarem ou perseguirem aquele que disparou.
+config.cgm.server.aggro.silenced=Alcance Silenciado
+config.cgm.server.aggro.silenced.tooltip=Qualquer mob numa esfera com este raio vai ir pra cima de quem disparou uma arma silenciada.
+config.cgm.server.aggro.unsilenced=Alcance Desilenciado
+config.cgm.server.aggro.unsilenced.tooltip=Qualquer mob numa esfera com este raio vai ir pra cima de quem disparou uma arma desilenciada.
+config.cgm.server.aggro.exempt=Classes de Mobs Isentas
+config.cgm.server.aggro.exempt.tooltip=Quaisquer mobs de uma classe cuja está estipulada nesta lista, não avançarão em quem disparou.
 
 config.cgm.server.missiles.normal=Mísseis
 config.cgm.server.missiles.normal.tooltip=Propriedades relacionadas aos mísseis.
@@ -86,58 +86,58 @@ config.cgm.server.grenade.normal.explosion_range=Raio da Explosão
 config.cgm.server.grenade.normal.explosion_range.tooltip=A distância máxima que uma explosão é efetiva.
 
 config.cgm.server.grenade.stun=Granadas de Atordoamento
-config.cgm.server.grenade.stun.tooltip=Blinding/deafening properties of stun grenades.
-config.cgm.server.grenade.stun.blind=Cegamento por Flash
-config.cgm.server.grenade.stun.blind.tooltip=Blinding properties of stun grenades.
+config.cgm.server.grenade.stun.tooltip=Propriedades de cegueira/ensurdecimento das Granadas de Atordoamento.
+config.cgm.server.grenade.stun.blind=Cegueira por Flash
+config.cgm.server.grenade.stun.blind.Propriedades de cegueira das Granadas de Atordoamento.
 config.cgm.server.grenade.stun.deafen=Ensurdecer
-config.cgm.server.grenade.stun.deafen.tooltip=Deafening properties of stun grenades.
+config.cgm.server.grenade.stun.deafen.tooltip=Propriedades de ensurdecimento das Granadas de Atordoamento.
 
 config.cgm.server.grenade.stun.effect_criteria.blind=Critérios do Efeito
-config.cgm.server.grenade.stun.effect_criteria.blind.tooltip=Criteria that determines the presence/absence and duration of the blinding effect.
+config.cgm.server.grenade.stun.effect_criteria.blind.tooltip=Critérios que determinam a presença/ausência e a duração do efeito de Cegueira por Flash.
 config.cgm.server.grenade.stun.blind.overlay.alpha=Sobreposição Alpha
-config.cgm.server.grenade.stun.blind.overlay.alpha.tooltip=After the duration drops to this many ticks, the transparency of the overlay when blinded will gradually fade to 0 alpha.
-config.cgm.server.grenade.stun.blind.overlay.fade=Overlay Fade Threshold
-config.cgm.server.grenade.stun.blind.overlay.fade.tooltip=Transparency of the overlay when blinded will be this alpha value, before eventually fading to 0 alpha.
+config.cgm.server.grenade.stun.blind.overlay.alpha.tooltip=Assim que a duração chegar neste tanto de ticks, a transparência da sobreposição quando se está cegado irá gradualmente reduzir para 0 de alpha.
+config.cgm.server.grenade.stun.blind.overlay.fade=Magnitude de Transição da Sobreposição
+config.cgm.server.grenade.stun.blind.overlay.fade.tooltip=A Transparência da Sobreposição quando se está com Cegueira por Flash será este valor de alpha, antes de eventualmente cair para 0 de alpha.
 
 config.cgm.server.grenade.stun.effect_criteria.deafen=Critérios do Efeito
-config.cgm.server.grenade.stun.effect_criteria.deafen.tooltip=Criteria that determines the presence/absence and duration of the deafening effect.
+config.cgm.server.grenade.stun.effect_criteria.deafen.tooltip=Critérios que determinam a presença/ausência e a duração do efeito de Ensurdecer.
 config.cgm.server.grenade.stun.deafen.sound.percentage=Porcentagem do Som
-config.cgm.server.grenade.stun.deafen.sound.percentage.tooltip=Volume of most game sounds when deafened will play at this percent, before eventually fading back to %100.
-config.cgm.server.grenade.stun.deafen.sound.fade=Sound Fade Threshold
-config.cgm.server.grenade.stun.deafen.sound.fade.tooltip=After the duration drops to this many ticks, the ringing volume will gradually fade to 0 and other sound volumes will fade back to %100.
-config.cgm.server.grenade.stun.deafen.sound.ring=Ring Volume
-config.cgm.server.grenade.stun.deafen.sound.ring.tooltip=Volume of the ringing sound when deafened will play at this volume, before eventually fading to 0.
+config.cgm.server.grenade.stun.deafen.sound.percentage.tooltip=O volume da maioria dos sons do jogo quando se estiver Ensurdecido tocará nesta porcentagem, antes de eventualmente subir de volta para %100.
+config.cgm.server.grenade.stun.deafen.sound.fade=Magnitude de Transição do Som
+config.cgm.server.grenade.stun.deafen.sound.fade.tooltip=Assim que a duração chegar neste tanto de ticks, o volume do zunido vai gradualmente cair para 0 e o volume dos outros sons vai subir de volta para %100.
+config.cgm.server.grenade.stun.deafen.sound.ring=Volume do Zunido
+config.cgm.server.grenade.stun.deafen.sound.ring.tooltip=O volume do som de zunido quando se está Ensurdecido tocará neste volume, antes de eventualmente cair para 0.
 
 config.cgm.server.grenade.stun.effect_criteria.radius=Raio
-config.cgm.server.grenade.stun.effect_criteria.radius.tooltip=Grenade must be no more than this many meters away to have an effect.
+config.cgm.server.grenade.stun.effect_criteria.radius.tooltip=A granada não pode estar mais longe do que isso em metros para ter efeito.
 config.cgm.server.grenade.stun.effect_criteria.duration.max=Duração Máxima
-config.cgm.server.grenade.stun.effect_criteria.duration.max.tooltip=Effect will have this duration (in ticks) if the grenade is directly at the player's eyes while looking directly at it.
+config.cgm.server.grenade.stun.effect_criteria.duration.max.tooltip=O efeito terá esta duração (em ticks) se a granada estiver bem na visão do jogador enquanto ele olha diretamente para ela.
 config.cgm.server.grenade.stun.effect_criteria.duration.min=Duração Mínima Pela Distância
-config.cgm.server.grenade.stun.effect_criteria.duration.min.tooltip=Effect will have this duration (in ticks) if the grenade is the maximum distance from the player's eyes while looking directly at it.
-config.cgm.server.grenade.stun.effect_criteria.angle.effect=Angulo de Efeito
-config.cgm.server.grenade.stun.effect_criteria.angle.effect.tooltip=Angle between the eye/looking direction and the eye/grenade direction must be no more than half this many degrees to have an effect.
+config.cgm.server.grenade.stun.effect_criteria.duration.min.tooltip=O efeito terá esta duração (em ticks) se a granada estiver na distância máxima dos olhos do jogador enquanto ele olha diretamente para ela.
+config.cgm.server.grenade.stun.effect_criteria.angle.effect=Ângulo de Efeito
+config.cgm.server.grenade.stun.effect_criteria.angle.effect.tooltip=O ângulo entre os olhos/direção da visão e os olhos/direção da granada não pode medir mais do que a metade disso (em graus) para ter efeito.
 config.cgm.server.grenade.stun.effect_criteria.angle.attenuation.max=Atenuação Máxima Por Ângulo
-config.cgm.server.grenade.stun.effect_criteria.angle.attenuation.max.tooltip=After duration is attenuated by distance, it will be further attenuated depending on the angle (in degrees) between the eye/looking direction and the eye/grenade direction. This is done by multiplying it by 1 (no attenuation) if the angle is 0; and by this value if the angle is the maximum within the angle of effect.
+config.cgm.server.grenade.stun.effect_criteria.angle.attenuation.max.tooltip=Após a duração ser atenuada pela distância, ela será atenuada ainda mais dependendo do ângulo (em graus) entre os olhos/direção da visão e os olhos/direção da granada. Isso é feito multiplicando-a por 1 (sem atenuação) se o ângulo for 0; e através deste valor se o ângulo máximo entre o ângulo de efeito.
 config.cgm.server.grenade.stun.effect_criteria.raytrace.opaque=Linha de Visão com Blocos Opacos
-config.cgm.server.grenade.stun.effect_criteria.raytrace.opaque.tooltip=If true, the effect is only applied if the line between the eyes and the grenade does not intersect any non-liquid blocks with an opacity greater than 0.
+config.cgm.server.grenade.stun.effect_criteria.raytrace.opaque.tooltip=Se ativo (true), o efeito só é aplicado se a linha de visão entre os olhos e a granada não atravessa nenhum bloco não-líquido com uma opacidade maior que 0.
 
 config.cgm.server.projectile_spread=Spray dos Projéteis
 config.cgm.server.projectile_spread.tooltip=Propriedades relacionadas ao Spray dos Projéteis
-config.cgm.server.projectile_spread.spread_threshold=Spread Threshold
-config.cgm.server.projectile_spread.spread_threshold.tooltip=The amount of time in milliseconds before logic to apply spread is skipped. The value indicates a reasonable amount of time before a weapon is considered stable again.
+config.cgm.server.projectile_spread.spread_threshold=Magnitude do Spray
+config.cgm.server.projectile_spread.spread_threshold.tooltip=Tempo em milisegundos antes da lógica que aplica o spray ser pulada. O valor indica uma quantia razoável de tempo antes que uma arma seja considerada estática novamente.
 config.cgm.server.projectile_spread.max_count=Quantia Máxima
-config.cgm.server.projectile_spread.max_count.tooltip=The amount of times a player has too shoot within the spread threshold before the maximum amount of spread is applied. Setting the value higher means it will take longer for the spread to be applied.
+config.cgm.server.projectile_spread.max_count.tooltip=O tanto de vezes que um jogador tem pra atirar entre Magnitude do Spray antes do real Spray Máximo ser aplicado. Valores maiores indicam que vai levar mais tempo para o Spray ser aplicado.
 
 key.categories.gun=MrCrayfish's Gun Mod
 key.aim=Mirar
 key.reload=Recarregar
 key.unload=Descarregar
 
-effect.cgm.blinded=Cegueira de Flash
+effect.cgm.blinded=Cegueira por Flash
 effect.cgm.deafened=Ensurdecido
 
 subtitle.cgm.stun.explosion=Explosão da Granada de Atordoamento
-subtitle.cgm.stun.ring=Surdez
+subtitle.cgm.stun.ring=Zunido
 subtitle.cgm.fire=Disparo
 subtitle.cgm.fire.silenced=Disparo silenciado
 subtitle.cgm.reload=Recarga
