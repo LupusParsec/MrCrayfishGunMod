@@ -65,9 +65,14 @@ config.cgm.server.aggro.exempt=Classes de Mobs Exclues
 config.cgm.server.aggro.exempt.tooltip=Tous les mobs des classes listées ici n'aggresseront pas les tireurs.
 
 config.cgm.server.missiles.normal=Missiles
-config.cgm.server.missiles.normal.tooltip=Properties relating to missiles.
-config.cgm.server.missiles.normal.explosion_range=Explosion Radius
+config.cgm.server.missiles.normal.tooltip=Propriétés Aveuglantes/Assourdissantes des missiles.
+config.cgm.server.missiles.normal.explosion_range=Rayon d'explosion
 config.cgm.server.missiles.normal.explosion_range.tooltip=The max distance which the explosion is effective to.
+
+config.cgm.server.grenade.normal=Grenades
+config.cgm.server.grenade.normal.tooltip=Propriétés Aveuglantes/Assourdissantes des grenades.
+config.cgm.server.grenade.normal.explosion_range=Rayon d'explosion
+config.cgm.server.grenade.normal.explosion_range.tooltip=The max distance which the explosion is effective to.
 
 config.cgm.server.grenade.stun=Grenades Étourdissantes
 config.cgm.server.grenade.stun.tooltip=Propriétés Aveuglantes/Assourdissantes des grenades étourdissantes.
