@@ -135,6 +135,11 @@ public class CommonEvents
 
         public boolean canReload(EntityPlayer player)
         {
+            if(stack.isEmpty())
+                {
+                reloadTrackerMap.remove(player.getUniqueID());
+                player.getDataManager().set(RELOADING, false);
+                }
             int deltaTicks = player.ticksExisted - startTick;
             return deltaTicks > 0 && deltaTicks % 10 == 0;
         }
