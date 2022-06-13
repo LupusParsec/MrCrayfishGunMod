@@ -87,7 +87,7 @@ public class CommonEvents
                 if(tracker.canReload(player))
                 {
                     tracker.increaseAmmo(player);
-                    if(tracker.isWeaponFull() || !tracker.hasAmmo(player))
+                    if((tracker.isWeaponFull() || !tracker.hasAmmo(player)) || (!tracker.hasAmmo(player)))
                     {
                         reloadTrackerMap.remove(player.getUniqueID());
                         player.getDataManager().set(RELOADING, false);
