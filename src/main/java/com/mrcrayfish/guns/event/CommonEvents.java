@@ -160,7 +160,6 @@ public class CommonEvents
                 }
                 else
                 {
-                    reloadTrackerMap.remove(player.getUniqueID());
                     player.getDataManager().set(RELOADING, false);
                 }
                 ammo.shrink(amount);
