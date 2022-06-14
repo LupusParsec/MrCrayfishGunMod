@@ -159,11 +159,6 @@ public class CommonEvents
                     tag.setInteger("AmmoCount", tag.getInteger("AmmoCount") + amount);
                 }
                 ammo.shrink(amount);
-                if(ammo.isEmpty())
-                {
-                    reloadTrackerMap.remove(player.getUniqueID());
-                    player.getDataManager().set(RELOADING, false);
-                }
             }
 
             String reloadSound = gun.sounds.getReload(gun);
