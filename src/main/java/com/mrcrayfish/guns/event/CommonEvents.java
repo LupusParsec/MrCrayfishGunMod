@@ -158,6 +158,11 @@ public class CommonEvents
                     amount = Math.min(amount, gun.general.maxAmmo - tag.getInteger("AmmoCount"));
                     tag.setInteger("AmmoCount", tag.getInteger("AmmoCount") + amount);
                 }
+                else
+                {
+                    reloadTrackerMap.remove(player.getUniqueID());
+                    player.getDataManager().set(RELOADING, false);
+                }
                 ammo.shrink(amount);
             }
 
