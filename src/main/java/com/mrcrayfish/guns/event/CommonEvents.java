@@ -1,3 +1,5 @@
+/* I'm trying to fix this bug >>> https://github.com/MrCrayfish/MrCrayfishGunMod/issues/57 */
+
 package com.mrcrayfish.guns.event;
 
 import com.mrcrayfish.guns.init.ModSounds;
@@ -97,14 +99,6 @@ public class CommonEvents
             getCooldownTracker(player.getUniqueID()).tick();
         }
     }
-    /*
-        public boolean hasNoAmmo(EntityPlayer player)
-            if(stack.isEmpty())
-            {
-                reloadTrackerMap.remove(player.getUniqueID());
-                player.getDataManager().set(RELOADING, false);
-            }
-        */
 
     private static class ReloadTracker
     {
@@ -140,7 +134,7 @@ public class CommonEvents
         {
             return ItemGun.findAmmo(player, gun.projectile.item) != null;
         }
-        
+
         public boolean canReload(EntityPlayer player)
         {
             int deltaTicks = player.ticksExisted - startTick;
