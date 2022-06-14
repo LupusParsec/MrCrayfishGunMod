@@ -97,6 +97,14 @@ public class CommonEvents
             getCooldownTracker(player.getUniqueID()).tick();
         }
     }
+    /*
+        public boolean hasNoAmmo(EntityPlayer player)
+            if(stack.isEmpty())
+            {
+                reloadTrackerMap.remove(player.getUniqueID());
+                player.getDataManager().set(RELOADING, false);
+            }
+        */
 
     private static class ReloadTracker
     {
@@ -132,14 +140,7 @@ public class CommonEvents
         {
             return ItemGun.findAmmo(player, gun.projectile.item) != null;
         }
-        /*
-        public boolean hasNoAmmo(EntityPlayer player)
-            if(stack.isEmpty())
-            {
-                reloadTrackerMap.remove(player.getUniqueID());
-                player.getDataManager().set(RELOADING, false);
-            }
-        */
+        
         public boolean canReload(EntityPlayer player)
         {
             int deltaTicks = player.ticksExisted - startTick;
@@ -157,10 +158,6 @@ public class CommonEvents
                 {
                     amount = Math.min(amount, gun.general.maxAmmo - tag.getInteger("AmmoCount"));
                     tag.setInteger("AmmoCount", tag.getInteger("AmmoCount") + amount);
-                }
-                else
-                {
-                    player.getDataManager().set(RELOADING, false);
                 }
                 ammo.shrink(amount);
             }
