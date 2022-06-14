@@ -144,7 +144,7 @@ public class CommonEvents
         public boolean canReload(EntityPlayer player)
         {
             int deltaTicks = player.ticksExisted - startTick;
-            return deltaTicks > 0 && deltaTicks % 10 == 0 && != null;
+            return deltaTicks > 0 && deltaTicks % 10 == 0;
         }
 
         public void increaseAmmo(EntityPlayer player)
