@@ -132,14 +132,16 @@ public class CommonEvents
         {
             return ItemGun.findAmmo(player, gun.projectile.item) != null;
         }
-
-        public boolean canReload(EntityPlayer player)
-        {
+        /*
+        public boolean hasNoAmmo(EntityPlayer player)
             if(stack.isEmpty())
-                {
+            {
                 reloadTrackerMap.remove(player.getUniqueID());
                 player.getDataManager().set(RELOADING, false);
-                }
+            }
+        */
+        public boolean canReload(EntityPlayer player)
+        {
             int deltaTicks = player.ticksExisted - startTick;
             return deltaTicks > 0 && deltaTicks % 10 == 0;
         }
@@ -157,6 +159,11 @@ public class CommonEvents
                     tag.setInteger("AmmoCount", tag.getInteger("AmmoCount") + amount);
                 }
                 ammo.shrink(amount);
+                if(ammo.isEmpty())
+                {
+                    reloadTrackerMap.remove(player.getUniqueID());
+                    player.getDataManager().set(RELOADING, false);
+                }
             }
 
             String reloadSound = gun.sounds.getReload(gun);
