@@ -1,3 +1,8 @@
+/* TO DO LIST */
+/* reload animation bug when ammo is not enough to fully reload weapons >>> https://github.com/MrCrayfish/MrCrayfishGunMod/issues/57 */
+/* add compat with Backpacked in 1.12.2 >>> https://github.com/MrCrayfish/MrCrayfishGunMod/issues/287 */
+/* fix some guns firing when unpausing the game by left-click "Back to Game" button */
+
 package com.mrcrayfish.guns.client.event;
 
 import com.mrcrayfish.guns.GunConfig;
