@@ -6,6 +6,7 @@ item.cgm.sniper_rifle.name=Fucile di Precisione
 item.cgm.grenade_launcher.name=Lanciagranate
 item.cgm.bazooka.name=Bazooka
 item.cgm.chain_gun.name=Minigun
+item.cgm.part_chain_gun_base.name=Base per Minigun
 item.cgm.rifle.name=Fucile
 item.cgm.assault_rifle.name=Fucile d'assalto
 item.cgm.machine_pistol.name=Pistola Mitragliatrice
