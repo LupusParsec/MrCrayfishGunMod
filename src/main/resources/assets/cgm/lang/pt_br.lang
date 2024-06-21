@@ -6,6 +6,7 @@ item.cgm.sniper_rifle.name=Rifle Sniper
 item.cgm.grenade_launcher.name=Lançador de Granada
 item.cgm.bazooka.name=Bazuca
 item.cgm.chain_gun.name=Minigun
+item.cgm.part_chain_gun_base.name=Base da Minigun
 item.cgm.rifle.name=Rifle
 item.cgm.assault_rifle.name=Rifle de Assalto
 item.cgm.machine_pistol.name=Metralhadora
