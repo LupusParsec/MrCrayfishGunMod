@@ -6,6 +6,7 @@ item.cgm.sniper_rifle.name=Sniper Rifle
 item.cgm.grenade_launcher.name=Grenade Launcher
 item.cgm.bazooka.name=Bazooka
 item.cgm.chain_gun.name=Minigun
+item.cgm.part_chain_gun_base.name=Minigun Base
 item.cgm.rifle.name=Rifle
 item.cgm.assault_rifle.name=Assault Rifle
 item.cgm.machine_pistol.name=Machine Pistol
